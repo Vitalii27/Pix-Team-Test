@@ -1,0 +1,93 @@
+.section__map {
+    position: relative;
+    height: 100vh;
+}
+
+#map {
+    height: calc(100% - 47px);
+}
+
+.footer {
+    position: relative;
+    background: $green;
+    height: 47px;
+}
+
+.background__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 430px;
+    height: 430px;
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 0 0px 7px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.container__footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &_copy {
+        font-size: 14px;
+    }
+}
+
+.block_form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 280px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.form__input {
+    min-width: 280px;
+    &_text {
+        border: 1px solid #d8d8d8;
+        color: #6f6f6f;
+        outline: none;
+        width: 100%;
+        padding: 7px 15px;
+        margin-bottom: 15px;
+    }
+    &_comment {
+        width: 100%;
+        height: 80px;
+        border: 1px solid #d8d8d8;
+        padding: 7px 15px;
+        color: #6f6f6f;
+        outline: none;
+        resize: none;
+    }
+}
+
+.form__block_btn {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    margin: 32px auto 0;
+    &_submit {
+        width: 65px;
+        height: 65px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background: $green;
+        outline: none;
+        z-index: 2;
+        &_check {
+            display: block;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.8);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            cursor: pointer;
+        }
+    }
+}
