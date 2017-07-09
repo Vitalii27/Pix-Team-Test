@@ -31,6 +31,7 @@ let moduleJs = [
 let vendorJs = [
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/swiper/dist/js/swiper.jquery.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js'
 
 
 
@@ -39,6 +40,8 @@ let vendorJs = [
 let vendorCss = [
         'node_modules/normalize-css/normalize.css',
         'node_modules/swiper/dist/css/swiper.min.css',
+        'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/slick-carousel/slick/slick-theme.css'
 
 
     ]
