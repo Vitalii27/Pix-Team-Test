@@ -24,14 +24,17 @@ const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'developm
 let moduleJs = [
 
 
+    'app/js/form.js',
     'app/js/main.js',
+    'app/js/validation.js',
     'app/js/map.js'
 ];
 // Пути к нашим внешним плагинам и библиотекам яваскрипт
 let vendorJs = [
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/swiper/dist/js/swiper.jquery.min.js',
-        'node_modules/slick-carousel/slick/slick.min.js'
+        'node_modules/slick-carousel/slick/slick.min.js',
+        'node_modules/qtip2/dist/jquery.qtip.min.js'
 
 
 
@@ -41,7 +44,8 @@ let vendorCss = [
         'node_modules/normalize-css/normalize.css',
         'node_modules/swiper/dist/css/swiper.min.css',
         'node_modules/slick-carousel/slick/slick.css',
-        'node_modules/slick-carousel/slick/slick-theme.css'
+        'node_modules/slick-carousel/slick/slick-theme.css',
+        'node_modules/qtip2/dist/jquery.qtip.min.css'
 
 
     ]
