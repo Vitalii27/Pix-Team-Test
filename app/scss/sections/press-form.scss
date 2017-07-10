@@ -43,12 +43,25 @@
  
  .has-error {
      background-color: #fad2d1 !important;
-     border-color: #f97e76 !important;
  }
  
  .qtip-mystyle {
+     //  position: relative;
      background-color: #f97e76;
      border-color: #f97e76;
-     color: #ffffff;
-     font-size: 13px;
+     border-radius: 50% !important;
+     min-width: 20px !important;
+     height: 20px !important;
+     &:before {
+         content: "x";
+         position: absolute;
+         font-size: 13px;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+     }
+ }
+ 
+ .qtip-tip {
+     display: none !important;
  }

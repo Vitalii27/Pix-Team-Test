@@ -46,14 +46,14 @@ var validation = (function() {
         position = {
             left: {
                 my: 'center right',
-                at: 'center left'
+                at: 'center right'
             },
             right: {
                 my: 'center left',
-                at: 'center right'
+                at: 'center left'
             },
             bottom: {
-                my: 'top center',
+                my: 'left center',
                 at: 'bottom center'
             },
             top: {

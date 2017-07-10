@@ -78,16 +78,15 @@
         border-radius: 50%;
         background: $green;
         outline: none;
-        z-index: 2;
-        &_check {
-            display: block;
-            position: absolute;
-            color: rgba(255, 255, 255, 0.8);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 40px;
-            cursor: pointer;
+        color: rgba(255, 255, 255, .8);
+        font-size: 40px;
+        transition: all .3s;
+        &:hover {
+            background: rgba(21, 153, 81, 1);
+            color: rgba(255, 255, 255, 1);
+        }
+        &:active {
+            background: rgba(4, 106, 50, 1);
         }
     }
 }
