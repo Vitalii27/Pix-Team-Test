@@ -27,6 +27,8 @@ let moduleJs = [
     'app/js/form.js',
     'app/js/main.js',
     'app/js/validation.js',
+    'app/js/slider.js',
+    'app/js/carausel.js',
     'app/js/map.js'
 ];
 // Пути к нашим внешним плагинам и библиотекам яваскрипт

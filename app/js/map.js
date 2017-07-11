@@ -12,7 +12,6 @@ var mapGoogle = (function() {
     return { init: init };
 
 })();
-
 if ($('#map').length) {
     google.maps.event.addDomListener(window, 'load', mapGoogle.init);
 }

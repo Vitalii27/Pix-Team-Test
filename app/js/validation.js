@@ -49,8 +49,8 @@ var validation = (function() {
                 at: 'center right'
             },
             right: {
-                my: 'center left',
-                at: 'center left'
+                my: 'top bottom',
+                at: 'top left'
             },
             bottom: {
                 my: 'left center',

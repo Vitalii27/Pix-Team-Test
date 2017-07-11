@@ -35,7 +35,7 @@
     }
 }
 
-.block_form {
+.block__form {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -76,7 +76,7 @@
         height: 65px;
         border: 1px solid transparent;
         border-radius: 50%;
-        background: $green;
+        background: #43a06d;
         outline: none;
         color: rgba(255, 255, 255, .8);
         font-size: 40px;
