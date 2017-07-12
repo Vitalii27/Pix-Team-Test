@@ -1,8 +1,8 @@
-if ($('#form__map').length) {
+if ($('#form-map').length) {
     var formMail = new MyForm($('#form-map'), '/send-form.php');
     formMail.init();
 }
-if ($('#form__press').length) {
+if ($('#form-zip').length) {
     var formMail = new MyForm($('#form-zip'));
     formMail.init();
 }

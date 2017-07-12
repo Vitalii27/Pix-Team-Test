@@ -7,9 +7,6 @@ var MyForm = function(form, url) {
     }
 };
 
-var gal = $('.form__block_btn_submit_check')
-    // console.log(gal)
-
 
 MyForm.prototype.addListener = function(form) {
     $(form).on('submit', $.proxy(this.submitForm, this));
