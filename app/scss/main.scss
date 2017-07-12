@@ -3,9 +3,9 @@
 @import "layout/font-awesome";
 @import "layout/settings";
 // sections
-@import "sections/welcome";
-@import "sections/docs";
-@import "sections/press-form";
+@import "sections/intro-section";
+@import "sections/services.scss";
+@import "sections/zip-form";
 @import "sections/green";
 @import "sections/footer";
 // @import "sections/login";

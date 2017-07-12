@@ -1,4 +1,4 @@
- .press__block {
+ .form-zip {
      position: absolute;
      background: #fff;
      left: 50%;
@@ -18,7 +18,7 @@
      }
  }
  
- .form__input_text_press {
+ .form__input_text_zip {
      width: 265px !important;
      margin: 30px 0 !important;
      border-radius: 3px;
@@ -27,14 +27,14 @@
      }
  }
  
- .form__desc {
+ .form__text {
      font-size: 15.35px;
      color: #a39f9f;
      width: 225px;
      margin: 27px auto;
  }
  
- .form__press_submit {
+ .form__button {
      text-transform: uppercase;
      font-size: 25.65px;
      background: rgba(34, 125, 211, 0.85);
