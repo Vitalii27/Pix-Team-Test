@@ -10,6 +10,9 @@
     @include media($size4) {
         height: 700px;
     }
+    @include media($size5) {
+        height: 750px;
+    }
     &__list {
         display: flex;
         justify-content: space-between;

@@ -19,9 +19,20 @@ MyForm.prototype.submitForm = function(e) {
     e.preventDefault();
     var $form = $(this.form),
         defObject = this.ajaxForm($form, this.url);
+    if (defObject) {
+        defObject.done(function(ans) {
+            var mes = ans.mes,
+                status = ans.status;
 
+            if (status === 'OK') {
+                $form.trigger('reset');
+                $form.find('.success-mes').text(mes).show();
+            } else {
+                $form.find('.error-mes').text(mes).show();
+            }
+        });
+    }
 };
-
 MyForm.prototype.ajaxForm = function(form, url) {
     if (!validation.validateForm(form)) {
         return false; // Возвращает false, если не проходит валидацию

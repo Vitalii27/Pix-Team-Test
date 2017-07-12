@@ -1,8 +1,17 @@
 .slider {
+    position: relative;
     width: 100%;
     height: 100%;
-    // box-shadow: 1px 1px 1px 1px #000;
     overflow: hidden;
+}
+
+.shadow {
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    bottom: -120px;
+    box-shadow: 0 -130px 48px 79px rgba(0, 0, 0, 0.67);
+    z-index: 9;
 }
 
 .slider__elem1 {
@@ -50,6 +59,10 @@
         transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            left: 0%;
+            transform: translate(0%, -50%);
+        }
     }
 }
 
@@ -78,6 +91,15 @@
         line-height: 1.25;
         font-size: 49.35px;
         font-weight: 400;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            max-width: 685px;
+            @include media($size3) {
+                max-width: 400px;
+            }
+            @include media($size5) {
+                max-width: 310px;
+            }
+        }
         @include media($size3) {
             font-size: 44px;
         }

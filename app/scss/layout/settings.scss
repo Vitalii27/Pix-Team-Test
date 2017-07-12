@@ -3,11 +3,6 @@ colors
 -----------------------------------*/
 
 $green: #43a06d;
-
-/*-----------------------------------
-adjustment
------------------------------------*/
-
 // mixin responsive
 @mixin media($size) {
     @media (max-width: $size) {
@@ -15,12 +10,18 @@ adjustment
     }
 }
 
+// responsive variables
 $size1: 1200px;
 $size2: 940px;
 $size3: 768px;
 $size4: 480px;
 $size5: 384px;
 $size6: 320px;
+
+/*-----------------------------------
+adjustment
+-----------------------------------*/
+
 html,
 body {
     width: 100%;
