@@ -1,16 +1,24 @@
 .section__map {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 
 #map {
     height: calc(100% - 47px);
+    overflow: hidden;
+    @include media($size4) {
+        height: calc(100% - 75px);
+    }
 }
 
 .footer {
     position: relative;
     background: $green;
     height: 47px;
+    @include media($size4) {
+        height: 75px;
+    }
 }
 
 .background__form {
@@ -23,6 +31,10 @@
     background: rgba(255, 255, 255, .8);
     box-shadow: 0 0px 7px 3px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    @include media($size4) {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .container__footer {
@@ -32,6 +44,9 @@
     transform: translate(-50%, -50%);
     &_copy {
         font-size: 14px;
+        @include media($size3) {
+            text-align: center;
+        }
     }
 }
 
@@ -46,7 +61,10 @@
 }
 
 .form__input {
-    min-width: 280px;
+    width: 280px;
+    @include media($size4) {
+        width: 200px;
+    }
     &_text {
         border: 1px solid #d8d8d8;
         color: #6f6f6f;
@@ -71,6 +89,11 @@
     height: 65px;
     position: relative;
     margin: 32px auto 0;
+    @include media($size4) {
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+    }
     &_submit {
         width: 65px;
         height: 65px;
@@ -81,6 +104,11 @@
         color: rgba(255, 255, 255, .8);
         font-size: 40px;
         transition: all .3s;
+        @include media($size4) {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+        }
         &:hover {
             background: rgba(21, 153, 81, 1);
             color: rgba(255, 255, 255, 1);

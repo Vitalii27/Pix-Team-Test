@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     // box-shadow: 1px 1px 1px 1px #000;
+    overflow: hidden;
 }
 
 .slider__elem1 {
@@ -59,18 +60,30 @@
     align-items: center;
     max-width: 685px;
     margin-bottom: 200px;
+    @include media($size3) {
+        margin-bottom: 250px;
+    }
     &__logo {
         width: 273px;
         height: 273px;
         background: #000 url(../img/logo.png) no-repeat center;
         border-radius: 50%;
         margin: 0px auto 60px;
+        @include media($size3) {
+            margin-bottom: 35px;
+        }
     }
     &__title {
         text-transform: uppercase;
         line-height: 1.25;
         font-size: 49.35px;
         font-weight: 400;
+        @include media($size3) {
+            font-size: 44px;
+        }
+        @include media($size5) {
+            font-size: 38px;
+        }
         &_bold {
             font-weight: 600;
         }

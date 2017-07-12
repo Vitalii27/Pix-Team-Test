@@ -49,16 +49,16 @@ var validation = (function() {
                 at: 'center right'
             },
             right: {
-                my: 'top bottom',
-                at: 'top left'
+                my: 'center center',
+                at: 'center center'
             },
             bottom: {
-                my: 'left center',
-                at: 'bottom center'
+                my: 'center center',
+                at: 'center center'
             },
             top: {
-                my: 'bottom center',
-                at: 'top center'
+                my: 'center center',
+                at: 'center center'
             }
         };
         element.qtip({

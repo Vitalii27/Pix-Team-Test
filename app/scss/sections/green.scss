@@ -2,7 +2,14 @@
     position: relative;
     background: #308355;
     width: 100%;
-    height: 1190px;
+    height: 1400px;
+    overflow: hidden;
+    @include media($size2) {
+        font-size: 34px;
+    }
+    @include media($size3) {
+        height: 1500px;
+    }
 }
 
 .gree__block1 {
@@ -13,6 +20,13 @@
     position: absolute;
     top: 7%;
     right: 47.5%;
+    @include media($size3) {
+        top: 3%;
+    }
+    @include media($size5) {
+        right: 32%;
+        top: 1%;
+    }
 }
 
 .green__block1_desc {
@@ -20,11 +34,28 @@
     top: 22.5%;
     right: 24%;
     max-width: 60%;
+    @include media($size3) {
+        top: 16%;
+        margin-bottom: 20px;
+        max-width: 70%;
+    }
+    @include media($size5) {
+        right: 20%;
+        top: 13%;
+    }
 }
 
 .green__block1_title {
     font-size: 39.35px;
     margin-bottom: 37px;
+    @include media($size3) {
+        font-size: 34px;
+        margin-bottom: 17px;
+    }
+    @include media($size5) {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
 }
 
 .green__block1_text {
@@ -32,8 +63,20 @@
     text-align: justify;
     font-size: 14px;
     width: 72%;
+    @include media($size1) {
+        width: auto;
+    }
+    @include media($size5) {
+        font-size: 13px;
+    }
     p {
         margin-bottom: 58px;
+        @include media($size1) {
+            margin-bottom: 20px;
+        }
+        @include media($size5) {
+            margin-bottom: 0;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -41,7 +84,7 @@
 }
 
 .poligon2 {
-    margin-top: -876px;
+    margin-top: -1162px;
 }
 
 .green__block2 {
@@ -52,23 +95,78 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 60%;
+    @include media($size2) {
+        display: block !important;
+        top: 70%;
+        @include media($size3) {
+            right: 10px;
+        }
+    }
+    @include media($size4) {
+        top: 68%;
+    }
 }
 
+// .svg {
+//     height: 1200px;
+//     width: 100%;
+//     @include media($size2) {
+//         height: 1300px;
+//     }
+// }
 .green__block2_divece {
     position: absolute;
     top: 10%;
     right: 75%;
+    @include media($size2) {
+        right: 10px;
+        top: -210px;
+    }
+    @include media($size5) {
+        right: -27%;
+    }
 }
 
 .green__block2_desc {
     max-width: 60%;
     text-align: left;
     margin-left: 230px;
+    @include media($size1) {
+        margin-left: 150px;
+        max-width: 100%;
+    }
+    @include media($size2) {
+        position: absolute;
+        top: 35px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.green__block2_title {
+    @include media($size2) {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    @include media($size4) {
+        font-size: 28px;
+        margin-bottom: 6px;
+    }
+    @include media($size5) {
+        font-size: 24px;
+    }
 }
 
 .green__block2_text {
     text-align: justify;
     font-size: 14px;
+    @include media($size4) {
+        width: 120%;
+    }
+    @include media($size5) {
+        font-size: 13px;
+    }
 }
 
 .green__block2_btn_link {
@@ -81,11 +179,14 @@
     padding: 7px 30px;
     margin-top: 40px;
     transition: all .3s;
+    @include media($size4) {
+        margin-top: 15px;
+    }
     &:hover {
-        background: rgba(21, 153, 81, 1);
-        ;
+        background: #3b9765;
     }
     &:active {
-        background: rgba(4, 106, 50, 1);
+        background: #3a8e60;
+        border: 3px solid #3b9765;
     }
 }
